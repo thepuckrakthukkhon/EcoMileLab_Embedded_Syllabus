@@ -1,23 +1,22 @@
-# 📚 Month_21_25_Race_Preparation: การล็อกรุ่นซอฟต์แวร์ (Code Freeze), กล่องอะไหล่สำรอง และการซ้อมพิทฉุกเฉิน
-> การจัดการโค้ดรุ่นนิ่ง การคัดเลือกพกอุปกรณ์สำรองที่ถูกต้อง และซ้อมวิเคราะห์อาการเสียใต้ความกดดัน
+# 📚 Month_21_25_Race_Preparation: Code Freeze, กล่องอะไหล่สำรอง และวันแข่งขันจริง
+> ช่วงสัปดาห์แข่งขันจริง ห้ามแก้ไขโค้ดเด็ดขาด จัดเตรียมชุดกล่องกู้ชีพ VCU สำรอง 3 ชุด ซ้อม Pit stop เปลี่ยนอะไหล่ และประสานงานหน้าลู่แข่งขันจริง
 
 ---
 
 ## 📖 ข้อมูลและแหล่งเรียนรู้เพิ่มเติม (Resources for Further Study)
 เพื่อให้เข้าใจเชิงลึกและเห็นภาพการทำงานของระบบ แนะนำให้เข้าไปศึกษาที่ลิงก์และบทความต่อไปนี้ครับ:
-- [Git tags and releases documentation](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
-- [Automotive Wiring & Connector Crimping standard](https://www.ipc.org/) - มาตรฐานการย้ำหุ้มพอร์ตสายไฟยานยนต์ระดับโลก
+- [Automotive Wiring & Connector Crimping standards](https://www.ipc.org/)
 
 ---
 
 ## 💻 ตัวอย่างซอร์สโค้ดและตัวอย่างในโปรเจกต์ (Source Code & References)
-- ก่อนส่งมอบ ควรทำคำสั่งตรวจหาผลรวม Checksum ของไฟล์เฟิร์มแวร์เก็บไว้เป็นเอกสารยืนยัน: `sha256sum build/release_v1.bin`
+- เช็คลิสต์กล่องกู้ชีพ: ESP32 x3 ชุด, Contactor x2, Relay x2, Fuse x10 ชิ้นต่อขนาด, มัลติมิเตอร์, คีมย้ำขั้วสาย
 
 ---
 
 ## 🔍 คำสำคัญสำหรับไปศึกษาค้นหาข้อมูลต่อ (Search Keywords)
 หากต้องการหาคลิปวิดีโออธิบายหรือเปเปอร์วิชาการมาศึกษาเพิ่มเติม สามารถใช้คำค้นหาเหล่านี้ใน Google / YouTube / IEEE Xplore:
-`Git tag release branch`, `Waterproof connector IP67 crimping`, `SHA-256 bin file checksum`, `Emergency pit stop troubleshooting VCU`
+`Git tag release v1.0-race`, `IP67 waterproof crimping standard`, `Emergency pit stop VCU replacements`, `Scrutineering pass sticker Shell`
 
 ---
 *EcoMileLab Embedded & Electrical Team*

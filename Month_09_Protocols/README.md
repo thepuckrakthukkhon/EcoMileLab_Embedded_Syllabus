@@ -1,25 +1,25 @@
-# 📚 Month_09_Protocols: โปรโตคอลการสื่อสารข้อมูลฮาร์ดแวร์ (I2C, UART, SPI, cJSON)
-> วิธีการคุยแลกเปลี่ยนข้อมูลกับเซนเซอร์ไอซีวัดกำลังไฟฟ้า และวิธีแพ็กเกจข้อมูลส่งขึ้นระบบคลาวด์ Telemetry
+# 📚 Month_09_Protocols: เซนเซอร์วัดค่าความปลอดภัย (ADC, Interrupt) และจูนบอร์ดควบคุม VESC FOC
+> การเขียนไดรเวอร์คันเร่งคู่ (ADC) พร้อมระบบกรอง Failsafe และการเขียนคำนวณเวกเตอร์ขับมอเตอร์ FOC (Clarke/Park Transform) ร่วมกับบอร์ด VESC Inverter
 
 ---
 
 ## 📖 ข้อมูลและแหล่งเรียนรู้เพิ่มเติม (Resources for Further Study)
 เพื่อให้เข้าใจเชิงลึกและเห็นภาพการทำงานของระบบ แนะนำให้เข้าไปศึกษาที่ลิงก์และบทความต่อไปนี้ครับ:
-- [TI INA226 Datasheet](https://www.ti.com/product/INA226) - ค้นหาแผนผังรีจิสเตอร์ในการอ่านโวลต์กระแส
-- [ESP-IDF I2C Master Driver Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/i2c.html) - ฟังก์ชันเขียนอ่านอุปกรณ์ I2C
-- [cJSON GitHub Repository](https://github.com/DaveGamble/cJSON) - โค้ดไลบรารีสร้างและ Parse ข้อความ JSON ในภาษา C
+- [SimpleFOC Documentation](https://docs.simplefoc.com/) - เรียนรู้อัลกอริทึม FOC ควบคุมแรงบิดมอเตอร์
+- [ESP-IDF GPIO Interrupt API Reference](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/gpio.html)
+- [VESC Tool Manual](https://vesc-project.com/)
 
 ---
 
 ## 💻 ตัวอย่างซอร์สโค้ดและตัวอย่างในโปรเจกต์ (Source Code & References)
-- โค้ดเปิดบัสและอ่านรีจิสเตอร์ INA226: `Month_09_Protocols/i2c_ina226_demo/ina226_driver.c`
-- โค้ดแพ็กข้อมูลเซนเซอร์: `Month_09_Protocols/cjson_demo/cjson_helper.c`
+- ดูตัวอย่างไดรเวอร์ I2C อ่านเซนเซอร์: `Month_09_Protocols/i2c_ina226_demo/ina226_driver.c`
+- ดูตัวอย่างสร้าง Payload ข้อมูล: `Month_09_Protocols/cjson_demo/cjson_helper.c`
 
 ---
 
 ## 🔍 คำสำคัญสำหรับไปศึกษาค้นหาข้อมูลต่อ (Search Keywords)
 หากต้องการหาคลิปวิดีโออธิบายหรือเปเปอร์วิชาการมาศึกษาเพิ่มเติม สามารถใช้คำค้นหาเหล่านี้ใน Google / YouTube / IEEE Xplore:
-`I2C master write read ESP32`, `INA226 register configuration`, `cJSON serialization memory leak C`, `UART driver install ESP-IDF`
+`FOC Park Clarke transform`, `VESC UART CAN configuration`, `Throttle dual ADC failsafe C`, `GPIO hardware interrupt speed sensor`
 
 ---
 *EcoMileLab Embedded & Electrical Team*

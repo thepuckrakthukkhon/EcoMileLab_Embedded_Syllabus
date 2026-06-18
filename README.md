@@ -1,7 +1,7 @@
 # 🏎️ EcoMileLab Embedded & Electrical Syllabus
 > คลังรวบรวมข้อมูลการเรียนรู้วิศวกรรมสมองกลฝังตัวและระบบไฟฟ้ารถยนต์ประหยัดพลังงาน (Shell Eco-Marathon) ตั้งแต่เริ่มต้นจาก 0 สู่ระดับพร้อมลงแข่ง 100%
 
-คลังเก็บข้อมูลแห่งนี้สร้างขึ้นมาเพื่อให้ทีมงานฝ่ายไฟฟ้าและซอฟต์แวร์ของ **EcoMileLab** สามารถศึกษาและร่วมพัฒนาซอฟต์แวร์ควบคุมรถยนต์พลังงานไฟฟ้า VCU (Vehicle Control Unit) ตลอดกระบวนการออกแบบ 25 เดือน
+คลังเก็บข้อมูลแห่งนี้สร้างขึ้นมาเพื่อให้ทีมงานฝ่ายไฟฟ้าและซอฟต์แวร์ของ **EcoMileLab** สามารถศึกษาและร่วมพัฒนาซอฟต์แวร์ควบคุมรถยนต์พลังงานไฟฟ้า VCU (Vehicle Control Unit) ตลอดกระบวนการออกแบบ 25 เดือน โดยได้รับการปรับปรุงสอดคล้องตาม Roadmap ล่าสุดเรียบร้อยแล้ว
 
 ---
 
@@ -9,21 +9,21 @@
 
 | เดือน | หัวข้อการเรียนรู้หลัก | รายละเอียดเนื้อหา |
 | :---: | :--- | :--- |
-| **Month 07** | [Month_07_Foundation](./Month_07_Foundation) | ปูพื้นฐาน Git, ภาษา C และกฎกติกาการแข่งขันของ Shell |
-| **Month 08** | [Month_08_FreeRTOS](./Month_08_FreeRTOS) | ระบบปฏิบัติการเวลาจริง (FreeRTOS) บนบอร์ด ESP32 |
-| **Month 09** | [Month_09_Protocols](./Month_09_Protocols) | การวัดพารามิเตอร์ไฟฟ้าด้วย INA226 (I2C) และการสตรีมข้อมูล JSON |
-| **Month 10** | [Month_10_PCB_Design](./Month_10_PCB_Design) | การวาดวงจร Schematic และลายแผงวงจรพิมพ์ด้วยโปรแกรม KiCad |
-| **Month 11** | [Month_11_Precharge_Contactor](./Month_11_Precharge_Contactor) | วงจรกำลังไฟฟ้ากระแสสูง และระบบ Pre-charge ป้องกันกระแสชาร์จ |
-| **Month 12** | [Month_12_State_Machines](./Month_12_State_Machines) | การเขียนโปรแกรม Finite State Machine (FSM) และ Interrupt ISR |
-| **Month 13** | [Month_13_Angle_Sensor](./Month_13_Angle_Sensor) | การอ่านค่าเซนเซอร์แม่เหล็ก AS5600 รู้ตำแหน่งแกนมอเตอร์แบบเรียลไทม์ |
-| **Month 14** | [Month_14_SVPWM](./Month_14_SVPWM) | สัญญาณขับ MOSFET และระบบขับเคลื่อนมอเตอร์แบบ Six-step / SVPWM |
-| **Month 15** | [Month_15_FOC_PID](./Month_15_FOC_PID) | ทฤษฎี FOC (Field Oriented Control) และการจูนกระแส PID Loop |
-| **Month 16** | [Month_16_First_Drive](./Month_16_First_Drive) | การพัฒนาจำกัดกำลังรถ (Conservative Mode) ในวันวิ่งครั้งแรก |
-| **Month 17** | [Month_17_Reliability_Rollback](./Month_17_Reliability_Rollback) | การจัดตั้งเฟิร์มแวร์ NVS Config และขั้นตอนสลับเปลี่ยนบอร์ดกู้ชีพ |
-| **Month 18** | [Month_18_Thermal_Derating](./Month_18_Thermal_Derating) | การเขียนโค้ด Thermal Derating ลดพิกัดกำลังขับตามกราฟความร้อน |
-| **Month 19** | [Month_19_Coasting_Strategy](./Month_19_Coasting_Strategy) | ระบบตัดกำลังเกตไดรเวอร์ (Coasting Mode) ให้ล้อหมุนไหลลื่นเสรี |
-| **Month 20** | [Month_20_Tech_Documentation](./Month_20_Tech_Documentation) | การเขียนแบบไดอะแกรมและจัดเตรียมเอกสาร Tech Doc ภาษาอังกฤษส่ง Shell |
-| **Month 21-25** | [Month_21_25_Race_Preparation](./Month_21_25_Race_Preparation) | ล็อกเวอร์ชัน Release v1.0, ตรวจอะไหล่ฉุกเฉิน และซ้อมการเปลี่ยนบอร์ดพิท |
+| **Month 07** | [Month_07_Foundation](./Month_07_Foundation) | ปูพื้นฐาน Git, ภาษา C และออกแบบแผงวงจร PCB VCU (LV) ใน KiCad |
+| **Month 08** | [Month_08_FreeRTOS](./Month_08_FreeRTOS) | การเขียนโปรแกรมด้วยเฟรมเวิร์ก ESP-IDF และ FreeRTOS บนบอร์ด PCB จริง |
+| **Month 09** | [Month_09_Protocols](./Month_09_Protocols) | ไดรเวอร์คันเร่งคู่ Failsafe (ADC) สัญญาณรอบล้อ และการขับมอเตอร์ FOC / VESC |
+| **Month 10** | [Month_10_PCB_Design](./Month_10_PCB_Design) | การบีบอัดข้อมูลส่ง LoRa แบบ Byte Array ดิบ และสตรีมมิ่งแดชบอร์ดพิท |
+| **Month 11** | [Month_11_Precharge_Contactor](./Month_11_Precharge_Contactor) | วงจรทริกขับ Contactor และวงจรพรีชาร์จป้องกันสปาร์กวงจรกำลัง 48V |
+| **Month 12** | [Month_12_State_Machines](./Month_12_State_Machines) | ระบบ VCU State Machine (FSM) และการจำลองสัญญาณ HIL ดีบั๊กบนโต๊ะแล็บ |
+| **Month 13** | [Month_13_Angle_Sensor](./Month_13_Angle_Sensor) | การเดินระบบ Wiring Harness ลงรถจริง และติดตั้งชิลด์ป้องกัน EMI สัญญาณกวน |
+| **Month 14** | [Month_14_SVPWM](./Month_14_SVPWM) | จัดทำเอกสารไฟฟ้าอังกฤษ (Art. 67) และซ้อมด่านตรวจสภาพ Mock Scrutineering |
+| **Month 15** | [Month_15_FOC_PID](./Month_15_FOC_PID) | โหมดจำกัดกำลัง Conservative รันรถวิ่งจริงครั้งแรก และซ้อมสับเปลี่ยนบอร์ดกู้ชีพ |
+| **Month 16** | [Month_16_First_Drive](./Month_16_First_Drive) | วิเคราะห์ประเมินไฟล์ Log CSV รอบการวิ่งเพื่อจูนพฤติกรรมขับประหยัดไฟ |
+| **Month 17** | [Month_17_Reliability_Rollback](./Month_17_Reliability_Rollback) | ระบบ Thermal Derating ป้องกันมอเตอร์ร้อนจัด และโหมด Coasting ปล่อยไหลฟรี |
+| **Month 18** | [Month_18_Thermal_Derating](./Month_18_Thermal_Derating) | การทดสอบวิ่งระยะยาว 4 ชั่วโมงเพื่อตรวจวัดความเสถียรและ Memory Leak |
+| **Month 19** | [Month_19_Coasting_Strategy](./Month_19_Coasting_Strategy) | ล็อกรุ่นซอฟต์แวร์ด้วย Git tag v1.0-race และการปั๊มรหัส SHA-256 ตรวจสอบ |
+| **Month 20** | [Month_20_Tech_Documentation](./Month_20_Tech_Documentation) | ส่งยื่นเอกสารอนุมัติทางไฟฟ้าล่วงหน้าผ่านเว็บพอร์ทัลของ Shell |
+| **Month 21-25** | [Month_21_25_Race_Preparation](./Month_21_25_Race_Preparation) | Code Freeze ถาวร จัดตั้งชุดกล่องกู้ชีพ VCU และสนับสนุนทีมไฟฟ้าในวันแข่งจริง |
 
 ---
 
